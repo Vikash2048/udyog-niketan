@@ -1,11 +1,14 @@
-import { useState } from 'react'
+import About from "./pages/About"
+import Home from "./pages/Home"
+
 
 function App() {
 
 
   return (
-    <div className='w-[400px] h-[300px] md:bg-slate-950 md:text-white '>
-      hello world
+    <div>
+      <Home/>
+      <About/>
     </div>
   )
 }
