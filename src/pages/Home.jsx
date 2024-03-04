@@ -1,10 +1,12 @@
 import React from 'react'
 import Topbar from '../components/Topbar'
+import Navbar from "../components/Navbar"
 
 const Home = () => {
   return (
-    <div className='h-lvh'>
+    <div id='Home' className='h-lvh'>
         <Topbar/>
+        <Navbar/>
     </div>
   )
 }
