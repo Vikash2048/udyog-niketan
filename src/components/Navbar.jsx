@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <div className='border-2 md:h-20 h-16 flex justify-between items-center pl-8 pr-8'  >
+        <div className='md:h-20 h-16 flex justify-between items-center pl-8 pr-8 w-full'  >
             <div className='flex gap-2 items-center'>
                 <img src="/images/logo.png" alt="" />
                 <h2 className='md:text-4xl text-xl font-bold'><span className='text-[#FF6B18]'> UDYOG NIKETAN</span> TECHNO</h2>

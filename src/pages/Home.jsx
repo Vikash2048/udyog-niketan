@@ -31,7 +31,7 @@ const Home = () => {
         <Navbar/>
 
         <div style={{height: "calc(100vh - 128px)"}} className=' overflow-hidden relative' >
-          <img className="w-full h-full object-cover absolute top-0" src={img} alt="image" />
+          <img className="w-full h-full object-cover  " src={img} alt="image" />
           <div style={{height: "calc(100vh - 128px)", background: "linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)"}} className='w-[100%] b-4 absolute top-0 text-white flex flex-col justify-center items-center text-center box-border' >
             <h1 className='md:text-6xl font-bold mb-8 text-2xl'>Welcome to Udyog Niketan Techno</h1>
             <p className='md:mx-24 md:text-xl mx-4 text-md'>At Udyog Niketan Techno, we're leaders in telecommunications, trusted by industry giants like Reliance, Tata Indicom, and Bharti. With a focus on innovation and reliability, we deliver cutting-edge solutions tailored to your business needs. Partner with us to experience the difference in telecom services.</p>
