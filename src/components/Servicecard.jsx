@@ -11,10 +11,10 @@ const Servicecard = () => {
 ]
 
     return (
-        <div className='flex md:flex-row sm:flex-col gap-8 flex-wrap justify-center'>
+        <div className='flex md:flex-row sm:flex-col gap-8 sm:px-10 flex-wrap justify-center'>
         {
             services.map((item,id) => (
-                <div key={id} className='gap-5 w-[400px] bg-[#f3f3f379] rounded-3xl  border-2  border-[lightgrey] shadow-inherit px-6 py-6 hover:border-[#FF6B18]' >
+                <div key={id} className='gap-5 md:w-[400px] w-[350px] bg-[#f3f3f379] rounded-3xl  border-2  border-[lightgrey]  px-6 py-6 hover:border-[#FF6B18] hover:drop-shadow-md hover:shadow-lg md:hover:scale-110 transition-transform duration-1000 ease' >
                 <div className='pb-5'>
                     <img src={item[0]} alt="" />
                 </div>
