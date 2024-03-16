@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+
+// taking detail for contact form
 const Contact = () => {
   const [data, setData] = useState({
     firstName: "",
