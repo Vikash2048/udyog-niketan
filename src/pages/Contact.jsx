@@ -18,6 +18,7 @@ const Contact = () => {
     });
   };
 
+  // data input from user
   const dataInput = (e) => {
     const { name, value } = e.target;
     setData((prevData) => ({
