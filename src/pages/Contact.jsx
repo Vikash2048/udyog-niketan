@@ -1,5 +1,5 @@
 import { useState } from "react";
-import img from "../../public/images/contact.jpg";
+import img from "../../public/images/contact.png";
 
 // taking detail for contact form
 const Contact = () => {
@@ -31,18 +31,18 @@ const Contact = () => {
   };
 
   return (
-    <>
-      <h2 className="text-[#FF6B18] mt-20 text-center  font-medium text-lg pb-6 ">
+    <div className="bg-blue-50">
+      <h2 className="text-[#FF6B18] pt-10 text-center  font-medium text-lg pb-6 ">
         Contact Us
       </h2>
       <div
         id="Contact"
-        className="flex flex-col md:flex-row justify-around items-center "
+        className="flex flex-col md:flex-row justify-around items-center bg-blue-50 "
       >
         <div className="md:w-1/2 max-w-lg ml-4">
           <img src={img} alt="Contact" className="w-full h-auto rounded-lg" />
         </div>
-        <div className="md:w-1/2 max-w-lg mr-4">
+        <div className="md:w-1/2 max-w-lg mr-4 bg-white">
           <form
             onSubmit={submitHandler}
             className="flex flex-col justify-center items-center border p-8 rounded-lg shadow-md shadow-orange-100"
@@ -51,7 +51,7 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Enter First Name"
-                className="border p-2 w-1/2 mr-2"
+                className="border p-2 w-1/2 mr-2 outline-none"
                 value={data.firstName}
                 name="firstName"
                 onChange={dataInput}
@@ -59,7 +59,7 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Enter Last Name"
-                className="border p-2 w-1/2"
+                className="border p-2 w-1/2 outline-none"
                 name="lastName"
                 value={data.lastName}
                 onChange={dataInput}
@@ -72,7 +72,7 @@ const Contact = () => {
               value={data.email}
               name="email"
               onChange={dataInput}
-              className="border p-2 w-full mb-4"
+              className="border p-2 w-full mb-4 outline-none"
             />
             <textarea
               name="message"
@@ -81,7 +81,7 @@ const Contact = () => {
               value={data.message}
               onChange={dataInput}
               placeholder="Message"
-              className="border p-2 w-full mb-4"
+              className="border p-2 w-full mb-4 outline-none"
             ></textarea>
             <button
               type="submit"
@@ -92,7 +92,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
