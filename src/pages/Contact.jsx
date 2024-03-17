@@ -8,6 +8,7 @@ const Contact = () => {
     lastName: "",
     email: "",
     message: "",
+    number:""
   });
 
   const submitHandler = (e) => {
@@ -17,6 +18,7 @@ const Contact = () => {
       firstName: "",
       lastName: "",
       email: "",
+      number:'',
       message: "",
     });
   };
@@ -74,6 +76,16 @@ const Contact = () => {
               onChange={dataInput}
               className="border p-2 w-full mb-4 outline-none"
             />
+            <input
+              type="number"
+              placeholder="Enter your Phone No."
+              required
+              value={data.number}
+              name="number"
+              onChange={dataInput}
+              className="border p-2 w-full mb-4 outline-none"
+            />
+
             <textarea
               name="message"
               cols="30"
