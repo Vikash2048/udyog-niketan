@@ -44,10 +44,10 @@ const Contact = () => {
         <div className="md:w-1/2 max-w-lg ml-4">
           <img src={img} alt="Contact" className="w-full h-auto rounded-lg" />
         </div>
-        <div className="md:w-1/2 max-w-lg mr-4 bg-white">
+        <div className="md:w-1/2 max-w-lg rounded-lg mr-4 bg-white">
           <form
             onSubmit={submitHandler}
-            className="flex flex-col justify-center items-center border p-8 rounded-lg shadow-md shadow-orange-100"
+            className="flex flex-col justify-center items-center  p-8 rounded-lg shadow-md overflow-hidden shadow-orange-100"
           >
             <div className="flex justify-start w-full mb-4">
               <input
